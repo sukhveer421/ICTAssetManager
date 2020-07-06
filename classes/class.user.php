@@ -64,10 +64,10 @@ class User extends Password{
     $mail->Host       = "smtp.gmail.com";
     $mail->Port       = 465;
     $mail->AddAddress($email);
-    $mail->Username="acmp013@gmail.com";
+    $mail->Username="youremail@gmail.com";
     $mail->Password="emailpassword";
-    $mail->SetFrom('acmp013@gmail.com','Asset Manager');
-    $mail->AddReplyTo("acmp013@gmail.com","Asset Manager");
+    $mail->SetFrom('youremail@gmail.com','Asset Manager');
+    $mail->AddReplyTo("youremail@gmail.com","Asset Manager");
     $mail->Subject    = $subject;
     $mail->MsgHTML($message);
     if($mail->Send()){
